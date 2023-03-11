@@ -12,6 +12,7 @@ pub use grammartec::newtypes::NTermID;
 use crate::{generators::Generator, inputs::nautilus::NautilusInput, Error};
 
 /// The nautilus context for a generator
+#[derive(Clone)]
 pub struct NautilusContext {
     /// The nautilus context for a generator
     pub ctx: Context,
